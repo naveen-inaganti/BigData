@@ -37,10 +37,10 @@ object TwitterMain {
 
 
     val cb = new ConfigurationBuilder
-    cb.setDebugEnabled(true).setOAuthConsumerKey("axPEFuSM7oiN2RmzRvmnBpumc")
-      .setOAuthConsumerSecret("A81LMjbmUBsaEWKLaVnBXFIAyPXoIThO69CqzA4qfCWeNpoTlF")
-      .setOAuthAccessToken("2160328664-YSSyE1iesMrgoZ7d6uEE3haANv2uamJNIYYekOy")
-      .setOAuthAccessTokenSecret("rIfU4DYfRy34M63T3SRL2Hv1JThxf9qNZLGjTwepeulkF")
+    cb.setDebugEnabled(true).setOAuthConsumerKey("")
+      .setOAuthConsumerSecret("")
+      .setOAuthAccessToken("")
+      .setOAuthAccessTokenSecret("")
     val auth = new OAuthAuthorization(cb.build)
 
     val stream = TwitterUtils.createStream(ssc, Some(auth),filters)
